@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initaial-scale=1.0">
+	<meta name="decription" content="1.2 accessible forms">
+	<meta name="author" content="Mandy Sue Peixoto">
+<!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
+	<title>Form Activity Solution File</title>
+<!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
+	<link rel="stylesheet" href="/Users/debrapeixoto/Desktop/GitHubfiles/1.2::Assignment-AccessibleForms/styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p><br>
+
+			<form>
+				<fieldset>
+					<div>
+						<label for="name">Full Name<span class="required">*</span></label><br>
+						<input type="text" id="name" name="name" required><br>
+					</div>
+
+					<div>
+						<label for="email">Email<span class="required">*</span></label><br>
+						<input type="text" id="email" name="email" required><br>
+					</div>
+						
+					<div>
+						<label for="phone">Phone<span class="required">*</span></label><br>
+						<input type="text" id="phone" name="phone" required><br><br>
+					</div>
+
+					<div>
+						<label id="contact">Preffered method of contact<span class="required">*</span></label><br>
+					</div>
+
+					<div>
+						<label for="option1">Phone</label>
+						<input type="radio" id="option1" name="option1">
+						<label id="opetion2">Email</label>
+						<input type="radio" id="option2" name="option2"><br><br>
+					</div>
+
+					<div>
+						<label for="state">State of residence<span class="required">*</span></label>
+						<select id="state" name="state">
+							<option value="alabama">AL</option>
+							<option value="alaska">AK</option>
+							<option value="arizona">AZ</option>
+							<option value="arkansas">AR</option>
+							<option value="california">CA</option>
+							<option value="colorado">CO</option>
+							<option value="connecticut">CT</option>
+							<option value="delaware">DE</option>
+							<option value="florida">FL</option>
+							<option value="georgia">GA</option>
+							<option value="hawaii">HI</option>
+							<option value="idaho">ID</option>
+							<option value="illinois">IL</option>
+							<option value="indiana">IN</option>
+							<option value="iowa">IA</option>
+							<option value="kansas">KS</option>
+							<option value="kentucky">KY</option>
+							<option value="louisiana">LA</option>
+							<option value="maine">ME</option>
+							<option value="maryland">MD</option>
+							<option value="massachusetts">MA</option>
+							<option value="michigan">MI</option>
+							<option value="minnesta">MN</option>
+							<option value="mississippi">MS</option>
+							<option value="missouri">MO</option>
+							<option value="montana">MT</option>
+							<option value="nebraska">NE</option>
+							<option value="nevada">NV</option>
+							<option value="new hampshire">NH</option>
+							<option value="new jersey">NJ</option>
+							<option value="new mexico">NM</option>
+							<option value="new york">NY</option>
+							<option value="north carolina">NC</option>
+							<option value="north dakota">ND</option>
+							<option value="ohio">OH</option>
+							<option value="oklahoma">OK</option>
+							<option value="oregon">OR</option>
+							<option value="pennsylvania">PA</option>
+							<option value="rhode island">RI</option>
+							<option value="south carolina">SC</option>
+							<option value="south dakota">SD</option>
+							<option value="tennesse">TN</option>
+							<option value="utah">UT</option>
+							<option value="vermont">VT</option>
+							<option value="virginia">VA</option>
+							<option value="washington">WA</option>
+							<option value="west virginia">WV</option>
+							<option value="wisconsin">WI</option>
+							<option value="wyoming">WY</option>
+							<option value="district of columbia">DC</option>
+						</select>
+					</div><br>
+
+					<div>
+						<label for="comments">Comments<span class="required">*</span></label>
+						<output id="comments" required></output><br>
+						<textarea></textarea>
+					</div>
+
+					<div>
+						<input type="submit" id="submit" name="submit">
+					</div>
+				</fieldset>
+			</form>	
+<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
